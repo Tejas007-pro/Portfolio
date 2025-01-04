@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        
+        body {
+            font-family: "Times New Roman", Times, serif; /* Font updated */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            height: 100vh;
+            background-color: #2e2e2e; /* Dark gray background */
+            color: white; /* White text for better contrast */
+        }
+
+        /* Top Buttons */
+        .nav {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            background-color: #444; /* Slightly lighter gray for nav bar */
+            padding: 10px 0;
+        }
+
+        .nav button {
+            color: white;
+            background: none;
+            border: none;
+            margin: 0 15px;
+            font-size: 16px;
+            font-family: inherit; /* Inherits Times New Roman */
+            cursor: pointer;
+        }
+
+        .nav button:hover {
+            text-decoration: underline;
+        }
+
+        /* Center Name */
+        .center {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .center h1 {
+            font-size: 3rem;
+            color: white; /* White for better visibility on dark gray */
+        }
+
+        /* Bottom Next Button */
+        .bottom {
+            margin-bottom: 20px;
+        }
+
+        .bottom button {
+            padding: 10px 20px;
+            font-size: 18px;
+            color: white;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            font-family: inherit; /* Inherits Times New Roman */
+            cursor: pointer;
+        }
+
+        .bottom button:hover {
+            background-color: #0056b3;
+        }
+        /* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack sections vertically */
+        text-align: center;
+    }
+
+    .left-section {
+        width: 100%; /* Full width on smaller screens */
+        padding-right: 0;
+    }
+
+    .right-section {
+        width: 100%; /* Full width for image on smaller screens */
+        margin-top: 20px;
+    }
+
+    h1 {
+        font-size: 2.5rem; /* Adjust About text size on smaller screens */
+    }
+
+    h2 {
+        font-size: 1.2rem; /* Adjust section title size on smaller screens */
+    }
+
+    p {
+        font-size: 1rem; /* Adjust paragraph font size on smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .back {
+        font-size: 14px; /* Smaller button on very small screens */
+        padding: 8px 16px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <!-- Top Navigation -->
+    <div class="nav">
+        <a href="about.html">About</a>
+        <button onclick="alert('Expertise Section')">//Expertise</button>
+        <button onclick="alert('Experience Section')">//Experience</button>
+        <button onclick="alert('Contact Section')">//Contact</button>
+    </div>
+
+    <!-- Center Name -->
+    <div class="center">
+        <h1>Tejas Fegade</h1>
+    </div>
+
+    <!-- Bottom Button -->
+    <div class="bottom">
+        <a href="about.html" style="text-decoration: none; color: white;">
+          <button>➡</button>
+        </a>
+    </div>
+</body>
+</html>
