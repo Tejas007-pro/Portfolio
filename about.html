@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        body {
+            font-family: "Times New Roman", Times, serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            color: black;
+            overflow-x: hidden;
+        }
+
+        /* Container to hold the layout */
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 20px;
+            flex-wrap: wrap;
+            height: auto;
+        }
+
+        /* Left Section */
+        .left-section {
+            width: 60%;
+            padding-right: 20px;
+        }
+
+        /* Right Section for Image */
+        .right-section {
+            width: 35%;
+            margin-left: 20px;
+        }
+
+        /* Heading styles */
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        /* Special Styling for About Heading */
+        .about-heading {
+            font-size: 4rem; /* Larger font size for About */
+            font-weight: bold;
+            color: #007bff; /* Blue color to highlight About */
+            background-color: #f0f0f0; /* Light background */
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 20px;
+            text-align: center;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+
+        /* Back Button */
+        /* Back Button */
+.back {
+    text-decoration: none;
+    color: white;
+    background-color:  #000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.back:hover {
+    background-color: #0056b3;
+}
+
+/* Next Button */
+.next {
+    text-decoration: none;
+    color: white;
+    background-color: #28a745;  /* Green color for Next button */
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.next:hover {
+    background-color: #218838;
+}
+
+
+        /* Responsive Layout */
+        @media screen and (max-width: 768px) {
+            .container {
+                flex-direction: column; /* Stack sections vertically */
+                height: auto;
+                text-align: center;
+                padding: 10px;
+            }
+
+            .left-section, .right-section {
+                width: 100%;
+                padding-right: 0;
+                margin-left: 0;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.2rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+
+            .about-heading {
+                font-size: 3rem; /* Adjust About heading size for mobile */
+                padding: 8px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .back {
+                font-size: 14px;
+                padding: 8px 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Back Button -->
+    <a href="new_web.html" class="back">⬅ Back to Home</a>
+    <!-- Next Page Button (link to Ongoing Learning page) -->
+<a href="ongoing_learning.html" class="next">Next Page ➡</a>
+
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Left Section -->
+        <div class="left-section">
+            <!-- Who Am I? -->
+            <div class="section">
+                <h2>Who Am I?</h2>
+                <p>
+                    I am a passionate developer with a strong interest in Android development. I enjoy creating mobile apps that provide intuitive user experiences and solve real-world problems.
+                </p>
+            </div>
+
+            <!-- What I Do? -->
+            <div class="section">
+                <h2>What I Do?</h2>
+                <p>
+                    I specialize in Android app development, using Java and Kotlin to build scalable, high-performance applications. My goal is to create apps that are both functional and visually appealing.
+                </p>
+            </div>
+
+            <!-- About Heading -->
+            <div class="about-heading">
+                About
+            </div>
+        </div>
+
+        <!-- Right Section for Image -->
+        <div class="right-section">
+            <img src="android-development-image.jpg" alt="Android Development" style="width: 100%; height: auto; border-radius: 8px;">
+        </div>
+    </div>
+
+</body>
+</html>
