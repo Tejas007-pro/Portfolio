@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ongoing Learning</title>
+    <style>
+        /* Overall body styling */
+        body {
+            font-family: 'Times New Roman', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        /* Container for the page content */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Kotlin Image Styling */
+        .kotlin-image {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .kotlin-img {
+            width: 80%;
+            max-width: 600px;
+            height: auto;
+        }
+
+        /* Learning Sections Styling */
+        .learning-sections {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            gap: 20px;
+        }
+
+        .section {
+            width: 30%;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h2 {
+            font-size: 22px;
+            color: #333;
+            text-align: center;
+        }
+
+        p {
+            font-size: 16px;
+            color: #555;
+        }
+
+        /* Ongoing Learning Section */
+        .ongoing-learning {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .ongoing-learning h1 {
+            font-size: 36px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        /* Navigation Buttons Styling */
+        .buttons {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .previous, .next {
+            text-decoration: none;
+            color: white;
+            background-color: #007bff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            display: inline-block;
+            margin: 10px;
+        }
+
+        /* Previous Button (Blue Color) */
+        .previous {
+            background-color: #333;
+        }
+
+        .previous:hover {
+            background-color: #000;
+        }
+
+        /* Next Button (Green Color) */
+        .next {
+            background-color: #28a745;
+        }
+
+        .next:hover {
+            background-color: #218838;
+        }
+
+        /* Responsive design adjustments */
+        @media screen and (max-width: 768px) {
+            .learning-sections {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .section {
+                width: 80%;
+                margin-bottom: 20px;
+            }
+
+            .kotlin-img {
+                width: 90%;
+            }
+
+            .buttons {
+                display: flex;
+                justify-content: center;
+            }
+
+            .previous, .next {
+                font-size: 14px;
+                padding: 8px 16px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Main Container -->
+    <div class="container">
+
+        <!-- Kotlin Image on Top -->
+        <div class="kotlin-image">
+            <img src="kotlin_image.png" alt="Kotlin Image" class="kotlin-img">
+        </div>
+
+        <!-- Learning Sections below the image -->
+        <div class="learning-sections">
+            <!-- Current Course Section -->
+            <div class="section" id="current-course">
+                <h2>Current Course</h2>
+                <p>I'm currently learning Kotlin for Android development, focusing on creating mobile apps using Android Studio, integrating APIs, and mastering Kotlin-specific features like Coroutines and Jetpack.</p>
+            </div>
+
+            <!-- Personal Project Section -->
+            <div class="section" id="personal-project">
+                <h2>Personal Project</h2>
+                <p>I created a calculator app in Android Studio during my internship.</p>
+            </div>
+
+            <!-- Conferences Section -->
+            <div class="section" id="conferences">
+                <h2>Conferences</h2>
+                <p>I am aiming to attend backend development conferences, specifically focusing on PostgreSQL.  </p>
+            </div>
+        </div>
+
+        <!-- Bottom Section: Ongoing Learning -->
+        <div class="ongoing-learning">
+            <h1>Ongoing Learning</h1>
+        </div>
+
+        <!-- Navigation Buttons: Previous Page & Next Page -->
+        <div class="buttons">
+            <!-- Previous Page Button (link to About Page) -->
+            <a href="about.html" class="previous">⬅ Previous Page</a>
+
+            <!-- Next Page Button (link to Skills Page) -->
+            <a href="skills.html" class="next">Next Page ➡</a>
+        </div>
+
+    </div>
+
+</body>
+</html>
