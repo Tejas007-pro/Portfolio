@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    <style>
+        /* Overall body styling */
+        body {
+            font-family: 'Times New Roman', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        /* Container for the page content */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Skills Section Styling */
+        .skills-section {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .skills-section h1 {
+            font-size: 36px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .skills-list {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            gap: 20px;
+        }
+
+        .skill {
+            width: 30%;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .skill h2 {
+            font-size: 22px;
+            color: #333;
+            text-align: center;
+        }
+
+        .skill p {
+            font-size: 16px;
+            color: #555;
+        }
+
+        /* Image Section at the bottom */
+        .skills-image {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .skills-img {
+            width: 80%;
+            max-width: 600px;
+            height: auto;
+        }
+
+        /* Navigation Buttons Styling */
+        .buttons {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .previous, .next {
+            text-decoration: none;
+            color: white;
+            background-color: #333;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            display: inline-block;
+            margin: 10px;
+        }
+
+        /* Previous Button (Dark Background) */
+        .previous {
+            background-color: #333;
+        }
+
+        .previous:hover {
+            background-color: #000;
+        }
+
+        /* Next Button (Green Background) */
+        .next {
+            background-color: #28a745;
+        }
+
+        .next:hover {
+            background-color: #218838;
+        }
+
+        /* Responsive design adjustments */
+        @media screen and (max-width: 768px) {
+            .skills-list {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .skill {
+                width: 80%;
+                margin-bottom: 20px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Main Container -->
+    <div class="container">
+
+        <!-- Skills Section -->
+        <div class="skills-section">
+            <h1>Skills</h1>
+        </div>
+
+        <!-- Skills List -->
+        <div class="skills-list">
+            <!-- Skill 1: C -->
+            <div class="skill" id="skill-c">
+                <h2>C</h2>
+                <p>I have a solid foundation in C programming, with experience in system-level programming, memory management, and data structures.</p>
+            </div>
+
+            <!-- Skill 2: C++ -->
+            <div class="skill" id="skill-cpp">
+                <h2>C++</h2>
+                <p>My experience in C++ includes object-oriented programming, the use of STL, and implementing algorithms and data structures.</p>
+            </div>
+
+            <!-- Skill 3: Java -->
+            <div class="skill" id="skill-java">
+                <h2>Java</h2>
+                <p>Java is one of my main languages for backend development, especially with frameworks like Spring, and working with databases.</p>
+            </div>
+        </div>
+
+        <!-- Skills List Continued -->
+        <div class="skills-list">
+            <!-- Skill 4: Kotlin (Ongoing) -->
+            <div class="skill" id="skill-kotlin">
+                <h2>Kotlin</h2>
+                <p>I am currently learning Kotlin for Android development, focusing on building mobile apps and mastering Kotlin-specific features like Coroutines.</p>
+            </div>
+
+            <!-- Skill 5: Soft Skills -->
+            <div class="skill" id="skill-soft">
+                <h2>Soft Skills</h2>
+                <p>Good communication, time management, and problem-solving skills, with an ability to work effectively in a team and independently.</p>
+            </div>
+        </div>
+
+        <!-- Image Section at the Bottom -->
+        <div class="skills-image">
+            <img src="skills_image.png" alt="Skills Image" class="skills-img">
+        </div>
+
+        <!-- Navigation Buttons: Previous Page & Next Page -->
+        <div class="buttons">
+            <!-- Previous Page Button (link to Ongoing Learning Page) -->
+            <a href="ongoing_learning.html" class="previous">⬅ Previous Page</a>
+
+            <!-- Next Page Button (link to Expertise Page) -->
+            <a href="expertise.html" class="next">Next Page ➡</a>
+        </div>
+
+    </div>
+
+</body>
+</html>
